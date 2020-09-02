@@ -1,0 +1,58 @@
+.header, .main-image, .navbar, .site-logo {
+    display: flex;
+}
+
+
+
+
+.header {
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+    text-align:right;
+    background-color: orange;
+}
+
+.site-logo {
+    justify-content: left;
+    margin: 1% 5%;
+}
+
+
+.navbar {
+    width: 100%;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.navbar div {
+    margin: 5%;
+}
+
+.main-image {
+    width: 100%;
+    /* height: 400px; */
+    background-image: url(../images/hero-image.jpg);
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* justify-content: center;
+    align-content: flex-end; */
+    position: relative;
+}
+
+.main-image div {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    padding: 2px;
+    background-color: white;
+    width: 20px;
+}
+
+.main-image div p{
+    position: absolute;
+    bottom: 0;
+}
+
