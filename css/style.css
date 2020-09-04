@@ -1,27 +1,38 @@
-.header, .main-image, .navbar, .site-logo {
+/* * {
+    border: solid black 1px;
+} */
+
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex {
     display: flex;
 }
 
 
-
-
 .header {
-    flex-direction: row;
     width: 100%;
     height: 10%;
     text-align:right;
     background-color: orange;
+    justify-content: space-between;
 }
 
 .site-logo {
-    justify-content: left;
     margin: 1% 5%;
 }
 
 
 .navbar {
     width: 100%;
-    flex-direction: row;
+    margin-top: 10px;
     align-content: center;
     justify-content: flex-end;
 }
@@ -30,29 +41,33 @@
     margin: 5%;
 }
 
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
 .main-image {
+    height: 75vh;
     width: 100%;
-    /* height: 400px; */
-    background-image: url(../images/hero-image.jpg);
+    background: url('../images/hero-image.jpg') no-repeat;
     background-color: gray;
-    background-repeat: no-repeat;
     background-size: cover;
-    /* justify-content: center;
-    align-content: flex-end; */
-    position: relative;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .main-image div {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    padding: 2px;
+    padding: 5px 30px;
     background-color: white;
-    width: 20px;
+    margin-bottom: 50px;
 }
 
-.main-image div p{
-    position: absolute;
-    bottom: 0;
-}
+.content-box {
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 5%;
 
+}
+/* .content {
+    padding: 25px 5%;
+} */
