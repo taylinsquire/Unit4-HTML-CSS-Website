@@ -64,9 +64,8 @@ main {
 .main-image {
     height: 600px;
     width: 100%;
-    background: url('../images/hero-image.jpg') no-repeat;
+    /* background: url('../images/hero-image.jpg') no-repeat; */
     background-color: #808080;
-    background-size: cover;
     justify-content: center;
     align-items: flex-end;
 }
@@ -76,7 +75,6 @@ main {
     background-color: #ffffff;
     margin-bottom: 50px;
 }
-
 .section-box {
     align-items: center;
     /* padding: 25px 0; */
@@ -84,12 +82,27 @@ main {
     /* max-width: 85%; */
     padding: 30px 0;
 }
+.section-box h2 {
+    align-self: flex-start;
+    margin-left: 180px;
+}
+.section-box ul {
+    list-style: none;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.section-box > ul li {
+    margin: 15px 150px;
 
+}
+.section-box ul li span{
+    font-weight: bold;
+}
 .section-text {
     font-size: 2em;
     max-width: 85%;
 }
-
 .image-block-container {
     flex-wrap: wrap;
     width: 85%;
@@ -154,4 +167,60 @@ main {
     background-color: #ffffff;
     flex-grow: 1;
 }
+.recipe-page {
+    align-items: center;
+}
 
+/* .review {
+
+} */
+.quote {
+    background-color: #EEF0F4;
+    width: 50%;
+}
+.directions-ingredients {
+justify-content: center;
+}
+.ingredients {
+    width: 100%;
+    flex-grow: 2;
+}
+.ingredients ul {
+    list-style: disc;
+    margin: 0;
+}
+.ingredients li {
+    margin: 0;
+    padding: 0;
+}
+.directions {
+    width: 100%;
+    flex-grow: 1;
+}
+.directions li {
+    margin: 30px;
+}
+.directions li h4 {
+    margin: 0;
+}
+#index-main-image {
+    background: url('../images/hero-image.jpg') no-repeat;
+    background-size: cover;
+}
+#recipe-main-image {
+    background: url('../images/burger.jpg') no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+#time-section {
+    background-color: #dadfea;
+    align-items: flex-start;
+    width: 100%;
+}
+#time-section li {
+    margin: 15px 150px;
+}
+#recipe-section {
+    max-width: 85%;
+    align-items: center;
+}
